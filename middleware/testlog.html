@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Logger</title>
+</head>
+<body>
+  <h1>Frontend Logging Middleware Test</h1>
+  <button id="logButton">Send Log</button>
+
+  <script type="module">
+    import { Log } from './loggs.js';
+
+    document.getElementById('logButton').addEventListener('click', () => {
+      
+      Log("frontend", "error", "component", "Test button clicked - sending test log");
+    });
+  </script>
+</body>
+</html>
